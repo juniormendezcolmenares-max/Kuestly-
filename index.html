@@ -10,6 +10,8 @@
 
   <meta name="theme-color" content="#000000">
 
+  <link rel="manifest" href="./manifest.json">
+
   <title>KLEEPING</title>
 
   <style>
@@ -86,6 +88,20 @@
     </section>
 
   </main>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./sw.js")
+          .then(() => {
+            console.log("KLEEPING Service Worker activo");
+          })
+          .catch(error => {
+            console.error("Error al registrar Service Worker:", error);
+          });
+      });
+    }
+  </script>
 
 </body>
 </html>
