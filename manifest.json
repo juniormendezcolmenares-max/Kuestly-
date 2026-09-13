@@ -1,0 +1,10 @@
+{
+  "name": "KLEEPING",
+  "short_name": "KLEEPING",
+  "description": "Tu nueva red social",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "portrait"
+}
